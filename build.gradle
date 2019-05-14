@@ -1,0 +1,29 @@
+plugins {
+    id "com.gradle.plugin-publish" version "0.10.1"
+    id 'java-gradle-plugin'
+ }
+
+pluginBundle {
+    website = 'https://github.com/janjoerke/gradle-version'
+    vcsUrl = 'https://github.com/janjoerke/gradle-version.git'
+    tags = ['version', 'git']
+}
+
+gradlePlugin {
+    plugins {
+        versionPlugin {
+            id = 'com.github.janjoerke.version'
+            displayName = 'Plugin for version management with git.'
+            description = 'This plugin sets the project version based on the last commit. It supports version incrementation and tagging.'
+            implementationClass = 'com.github.janjoerke.gradle.version.VersionPlugin'
+        }
+    }
+}
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	implementation 'org.eclipse.jgit:org.eclipse.jgit:5.3.1.201904271842-r'
+}

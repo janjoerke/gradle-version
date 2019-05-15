@@ -1,6 +1,7 @@
-/*
+/*******************************************************************************
  * The MIT License
  *
+ * Copyright 2019 Jan Jörke <janjoerke@gmail.com>.
  * Copyright 2012-2015 Zafar Khaja <zafarkhaja@gmail.com>.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -20,7 +21,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- */
+ *******************************************************************************/
 package com.github.janjoerke.gradle.version.expr;
 
 import static com.github.janjoerke.gradle.version.expr.CompositeExpression.Helper.eq;

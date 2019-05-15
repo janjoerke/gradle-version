@@ -1,4 +1,4 @@
-package com.github.janjoerke.gradle.version;
+package com.github.janjoerke.gradle;
 
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
